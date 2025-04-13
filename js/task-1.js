@@ -10,7 +10,7 @@
 //     в іншому випадку функція має повертати рядок "You ordered <quantity> droids worth <totalPrice> credits!", де <quantity> це кількість замовлених дроїдів, а <totalPrice> це їх загальна вартість.
 
 function makeTransaction(quantity, pricePerDroid, customerCredits) {
-  totalOrderValue = quantity * pricePerDroid;
+  let totalOrderValue = quantity * pricePerDroid;
   if (customerCredits >= totalOrderValue)
     return `You ordered ${quantity} droids worth ${totalOrderValue} credits!`;
   else return "Insufficient funds!";
